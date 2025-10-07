@@ -30,7 +30,7 @@ function AddTask({ onAddTaskSubmit }) {
            if (title.tri().includes(forbiddenWord) ||
               description.tri().includes(forbiddenWord)) 
            {             
-            return alert("A palavra 'batata' não pode ser utilizada.");
+            return alert("A palavra 'batata' e proibido.");
            }
           
           onAddTaskSubmit(title, description);

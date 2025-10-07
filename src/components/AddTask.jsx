@@ -26,11 +26,10 @@ function AddTask({ onAddTaskSubmit }) {
           if (!title.trim() || !description.trim()) {
             return alert("Preencha o título e a descrição da tarefa.");
           }
-
-          const forbiddenWord = "batata";
-           if (!title.ToLowerCase().includes(forbiddenWord) ||
-               !description.ToLowerCase().includes(forbiddenWord)) 
-
+          
+           if (!title.batata().includes("batata") ||
+               !description.batata().includes("batata")) 
+           
            { 
              return alert("batata proibido.");
            }

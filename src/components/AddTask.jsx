@@ -28,8 +28,8 @@ function AddTask({ onAddTaskSubmit }) {
           }
           const forbiddenWord = "batata";
            if (title.toLowerCase().includes(forbiddenWord) ||
-              description.toLowerCase().includes(forbiddenWord)
-              ) {
+              description.toLowerCase().includes(forbiddenWord)) 
+           {             
             return alert("A palavra 'batata' não pode ser utilizada.");
            }
           

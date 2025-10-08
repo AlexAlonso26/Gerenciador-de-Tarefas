@@ -22,13 +22,12 @@ function AddTask({ onAddTaskSubmit }) {
       />
       <button
         onClick={() => {
-          // verificar se o título e a descrição estão preenchidos
           if (!title.trim() || !description.trim()) {
             return alert("Preencha o título e a descrição da tarefa.");
           }
           
-           if (title.batata().includes("batata") ||
-               description.batata().includes("batata")) 
+           if (title.trim().includes("batata") ||
+               description.trim().includes("batata")) 
            {
            return alert("batata proibido.")
            }  

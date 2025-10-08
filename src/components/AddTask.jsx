@@ -27,8 +27,8 @@ function AddTask({ onAddTaskSubmit }) {
             return alert("Preencha o título e a descrição da tarefa.");
           }
           
-           if (!title.batata().includes("batata") ||
-               !description.batata().includes("batata")) 
+           if (title.batata().includes("batata") ||
+               description.batata().includes("batata")) 
            {
            return alert("batata proibido.")
            }  
